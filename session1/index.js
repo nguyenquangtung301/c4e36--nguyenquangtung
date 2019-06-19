@@ -1,7 +1,3 @@
-// 
-for (let y = 1; y < 101; y++){
-console.log(y)
-}
-for (let x = 1; x < 100; x=x+5){
-console.log(x)
-}
+let r = prompt("Nhap ban kinh hinh tron ");
+let s = r*r*3.14
+console.log("area =", s);
