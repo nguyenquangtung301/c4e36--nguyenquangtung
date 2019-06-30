@@ -18,7 +18,7 @@ for(let i = 0; i < flock1.length; i++)
     flock1[i]=flock1[i]+50
 
 }
-console.log("MONTH", m)
+console.log("month", m)
 console.log("one month has passed, now here is my flock:",flock1)
 let max = flock1[0]
 for(i=0; i < flock1.length; i++){
@@ -38,7 +38,7 @@ for (let i = 0; i < flock1.length; i++)
 }
 console.log("my flock has total is size:",sum)
 let profit = sum*2
-console.log("i would get", profit, "$")
+console.log("I would get", profit, "$")
 
 
 
@@ -51,20 +51,20 @@ if(answer === 'R'){
     let newitems = prompt("enter newitems");
     menu.push(newitems);
     console.log(menu);
-} else if(answer=== "U")
+} else if(answer === 'U')
 {
-    let items2=["T-Shirt", "Sweater", "Jeans"]
-    let answer1= prompt("Update position?")
-    let answer2= prompt("your new item?")
-    items2[answer1-1]=answer2
-    console.log(items2)
+    let menu1=["T-Shirt", "Sweater", "Jeans"]
+    let answer1 = prompt("Update position?")
+    let answer2 = prompt("your new item?")
+    menu1[answer1 - 1] = answer2
+    console.log(menu1)
 }
-else if(answer==="D")
+else if(answer === 'D')
 {
-    let items1=["T-Shirt", "Skirt", "Jeans"]
-    let answer3=prompt("Delete position?")
-    items1.splice(answer3-1, 1)
-    console.log(items1)
+    let menu2 = ["T-Shirt", "Skirt", "Jeans"]
+    let answer3 = prompt("Delete position?")
+    menu2.splice(answer3 - 1, 1)
+    console.log(menu2)
 }
 
 1.nested list : là danh sách bên trong một danh sách. ví dụ "người", có thể là nam hoặc nữ.
