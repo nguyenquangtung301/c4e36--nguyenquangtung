@@ -116,13 +116,3 @@
 //         y = y * i;
 // }
 //   console. log(`x! = ${y}`);
-const menu = ["Com", "Chao", "Rau", "Thit", "Ca"];
-let = prompt("askcustomer?") ;
-if(customer == "No"){
-    console.log("Google bye");
-}
-if(customer == Yes){
-    const newFood = "Pho";
-    menu.push(newFood);
-    console.log(menu);
-}

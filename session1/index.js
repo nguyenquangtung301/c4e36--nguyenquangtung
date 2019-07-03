@@ -124,14 +124,104 @@
 // } else{
 //     console.log(`Number ${n} at ${foundIndex} position!`)
 // }
-const menu = ["T-Shirt", "Sweater"];
-const answer = prompt("what do you want? (C,R,U,D)").toLowerCase();
-if(answer === 'R'){
-    console.log(menu);
-} else if(answer === 'C'){
-    let newitems = prompt("enter newitems");
-    menu.push(newitems);
-    console.log(menu)
 
+//1/7
+// object
+// const person = {
+//     name: "duc",
+//     age: 21,
+//     major: "chinese",
+// }
+// // property: value
+// console.log(person)
+// // crud
+// // 1.read
+// console.log(person.age)
 
-}
+// //2 create / update
+// //create
+// person.status = "available";
+// console.log(person)
+// //update
+// person.major = "korean";
+// console.log(person)
+// delte
+// delete person.age
+// 
+// const person = {
+//     ns: "noi",
+//     hc: "hoc",
+//     ngta: "nguoita"
+// }
+// const words = Object.keys(person)
+// words.forEach((word, index) => {
+//     console.log(`${index + 1}. ${word}`);
+// })
+// const answer = prompt("your code?")
+// if (person.hasOwnProperty('abc')){
+//     console.log(teenCode[answer]);
+
+// } else {
+//     const yOrN = prompt("contribute? (y/)").toLowerCase();
+//     if(yOrN === 'n'){
+//         console.log("goodbuye");
+    
+//     }else if(yOrN ==='y'){
+//         const meaning = prompt("Meaning");
+//         person[answer] = meaning;
+//     }
+// }
+// const newWord = Object.keys(person);
+// newWord.forEach((word, index)=> {
+//     console.log(`${index + 1}. ${word}`);
+// })
+
+// const word = "champion"
+// let letters = word.split('')
+// let displayLetter = [];
+
+// while (letters.length > 0){
+// const randomIndex = Math.floor(Math.random()*letters.length);
+// const charater = letters[randomIndex];
+// displayLetters.push(character);
+// letters.splice(randomIndex, 1);
+// }
+// const displayWord = displayLetters.join(" ");
+// console.log(displayWord);
+// const answer = prompt("your answer");
+// if(answer === word){
+//     console.log("hura");
+// } else {
+//     console.log("wrong")
+// }
+
+// const people = [
+//     {
+//         name: "dung",
+//         salary: 50000,
+//         hour: '5',
+//         days: '15',
+//     },
+//     {
+//         name: "duc",
+//         salary: 80000,
+//         hour: '7',
+//         days: '25'
+
+//     },
+//     {
+//         name: "phong",
+//         salary: 60000,
+//         hour: '2',
+//         days: '35'
+//     }
+// ];
+// // JSON
+// let totalSalary = 0;
+// people.forEach((person, index) => {
+//     const salary = person.salary * person.hour * person.days
+//     console.log(`luong cua ${person.name} la ${salary}`);
+//     totalSalary += salary;
+// })
+// console.log(`tong luong 3 nguoi la ${totalSalary}`)
+
