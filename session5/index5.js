@@ -1,71 +1,114 @@
-let flock = [5, 7, 300, 90, 24, 50, 75];
-console.log("Hello, my name is Tung and these are my sheep sizes:",flock)
-let max = flock[0]
-for(i = 0; i < flock.length; i++){
-    if (max < flock[i])
-    {
-        max = flock[i]
+1.
+const hello = ()=>{
+    for (i=0;i<3;i++){
+        console.log("Hello World")
     }
-}console.log(`now my biggest sheep has size ${max}, let shear it`)
-flock[2]=8
-console.log("after shearing, here is my flock:",flock)
-let flock1=[5, 7, 300, 90, 24, 50, 75]
-console.log("Hello, my name is Tung and these are my sheep sizes:",flock1)
-for(let m = 1; m < 4; m++)
-{
-for(let i = 0; i < flock1.length; i++)
-{
-    flock1[i]=flock1[i]+50
-
 }
-console.log("month", m)
-console.log("one month has passed, now here is my flock:",flock1)
-let max = flock1[0]
-for(i=0; i < flock1.length; i++){
-    if (max < flock1[i])
-    {
-        max = flock1[i]
+ 2.
+const sum = (x,y)=>{
+    console.log(x+y)
+}
+ 3
+const draw_square = (length,color)=>{
+    color(color)
+    for(i=0;i<4;i++){
+    fd(length)
+    rt(90)
     }
-}console.log(`now my biggest sheep has size ${max}, let shear it`)
-const indexofsheep=flock1.indexOf(max)
-flock1[indexofsheep]=8
-console.log("after shearing, here is my flock:",flock1)
 }
-let sum = 0
-for (let i = 0; i < flock1.length; i++)
+ 4
+const draw_square = (length,colorline)=>{
+    color(colorline)
+    for(i=0;i<4;i++){
+    fd(length)
+    rt(90)
+    }
+}
+for (let i = 0; i  < 30; i ++){
+        draw_square(i*5, "red")
+        lt(17)
+		penup()
+           fd(i*2)
+           pendown()
+}
+ 5
+const draw_star=(length)=> {
+    rt(90)
+    for (i = 0; i < 5; i++) {
+        fd(length)
+        rt(144)
+    }
+}
+
+6.
+const remove_dollar_sign = (s)=> {
+    let newstring = s.replace(/[$]/g, "")
+    return newstring
+}
+ 7.
+string_with_no_dollars = remove_dollar_sign("$80% percent of $life is to show $up")
+if (string_with_no_dollars == "80% percent of life is to show up"){
+   console.log("Your function is correct")}
+else{
+   console.log("Oops, there's a bug")}
+   8.
+function get_even_list(I) {
+    var newarray = [];
+    I.forEach((number, index) => {
+        if (number % 2 === 0) {
+            newarray.push(I[index]);
+        }
+    })
+    return newarray;
+ }
+ 10
+function is_inside(point, rectangle) {
+    var inside = true;
+    if (point[0] >= rectangle[0] && point[0] <= rectangle[0] + rectangle[2] && point[1] >= rectangle[1] && point[1] <= rectangle[1] + rectangle[3]) {
+        inside = true;
+    } else {
+        inside = false;
+    }
+    return inside;
+}
+11.
+let pTest = [200, 120];
+let recTest = [140, 60, 100, 200];
+if (is_inside(pTest, recTest)) {
+    console.log("Point is inside the retangle");
+} else {
+    console.log("Point is outside the retangle");
+}
+
+
+function giúp ta không phải viết cùng một code lại nhiều lần.
+ Nó giúp các nhà lập trình viết các modular code. 
+ Các hàm cho phép một nhà lập trình phân chia một chương trình lớn thành các hàm nhỏ và dễ quản lý
+
+to define/declare a function : 
+function funName() {
+	//code
+}
+
+- to call/use a function :
+funName();
+
+- return là một từ khoá đặt ở cuối hàm với mục đích trả kết quả về để sử dụng tiếp ở những đoạn code bên ngoài
+
+ Khai báo hàm
+function tinh_tong(a, b)
 {
-    sum = sum +flock1[i]
-}
-console.log("my flock has total is size:",sum)
-let profit = sum*2
-console.log("I would get", profit, "$")
-
-
-
-
-const menu = ["T-Shirt", "Sweater"];
-const answer = prompt("what do you want? (C,R,U,D)").toLowerCase();
-if(answer === 'R'){
-    console.log(menu);
-} else if(answer === 'C'){
-    let newitems = prompt("enter newitems");
-    menu.push(newitems);
-    console.log(menu);
-} else if(answer === 'U')
-{
-    let menu1=["T-Shirt", "Sweater", "Jeans"]
-    let answer1 = prompt("Update position?")
-    let answer2 = prompt("your new item?")
-    menu1[answer1 - 1] = answer2
-    console.log(menu1)
-}
-else if(answer === 'D')
-{
-    let menu2 = ["T-Shirt", "Skirt", "Jeans"]
-    let answer3 = prompt("Delete position?")
-    menu2.splice(answer3 - 1, 1)
-    console.log(menu2)
+     trả về kết quả là a + b
+    return a + b;
 }
 
-1.nested list : là danh sách bên trong một danh sách. ví dụ "người", có thể là nam hoặc nữ.
-2.một danh sách có thể lưu cả số nguyên và chuỗi.
+- tùy vào mục đích mà ta dùng có return hay không có return
+thông thường ta sử dụng return ở những trường hợp cần lấy kết quả đó để xử lý tiếp
+
+- Hàm có tham số truyền vào:
+funName(parameters1, ... ,parametersN){ 
+   //code
+};
+
+ to to use function from a different file other than our currently working file
+Sử dụng window.onload() => {}
