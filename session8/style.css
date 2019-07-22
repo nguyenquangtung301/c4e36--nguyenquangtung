@@ -1,0 +1,29 @@
+
+
+
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center ;
+height: 100%;
+width: 100%;
+flex-flow: 100%;
+
+}
+html,body {
+ height : 100%
+ width 100%
+}
+.screen{
+    background: red;
+    width: 100%
+    height 100%
+}
+.op{
+align-items: flex-end;
+}
+.number op {
+    flex-direction: row-reverse;
+    flex-
+}

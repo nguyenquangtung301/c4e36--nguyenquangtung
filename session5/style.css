@@ -1,0 +1,27 @@
+body{
+    front-family: Arial;
+    front: size 16px;
+    height : 100%
+    width 100%
+    color black;
+    padding: 200px 0px 0px 200px;
+}
+#khung{
+    margin: 0px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 165px;
+
+}
+ clear_all{
+    clear: both;
+}
+
+ button{
+    margin: 0px 15px 15px 0px;
+    padding: 10px 10px 10px 10px;
+    float: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: blue;
+}
